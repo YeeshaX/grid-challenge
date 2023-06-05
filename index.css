@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 50px 50px;
+}
+
+.outtermost{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 24px;
+}
+.leftgroup{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 24px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+    z-index: 1;
+}
+img[src$=".svg"]{
+    position: absolute;
+    right: 120px;
+    top: 0px;
+    z-index: 0;
+
+}
+.firstrow{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    column-gap: 24px;
+
+}
+.firstrow .box1{
+    background-color: hsl(263, 55%, 52%);
+    position: relative;
+    padding: 32px;
+    border-radius: 8px;
+    
+}
+.firstrow .box2{
+    background-color: hsl(217, 19%, 35%);
+    padding: 32px;
+    border-radius: 8px;
+    
+}
+img[src$=".jpg"]{
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    border: solid 2px hsl(0, 0%, 81%);
+    margin-right: 16px;
+}
+
+.name > h2{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.name > p{
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 12px;
+    font-weight: 500;
+    
+}
+h1{
+    font-size: 24px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 16px;
+    z-index: 1;
+    position: relative;
+}
+h1 + p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+
+}
+.box1 > p{
+    color: hsla(0, 0%, 100%, 0.5);
+}
+.box2 > p{
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.secondrow{
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    column-gap: 24px;
+}
+.secondrow .box1{
+background-color: hsl(0, 0%, 100%);
+padding: 32px;
+border-radius: 8px;
+box-shadow: 0px 4px 8px hsla(0, 0%, 0%, 0.189);
+}
+
+.secondrow .box1 h1{
+    color: hsl(219, 29%, 14%);
+    max-width: 90%;
+}
+.secondrow .box1 h2{
+    color: hsl(219, 29%, 14%);
+}
+.secondrow .box1 p{
+    color: hsla(217, 30%, 14%, 0.5);
+    max-width: 90%;
+}
+
+.secondrow .box2{
+    background-color: hsl(219, 29%, 14%);
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.secondrow .box2 h1{
+    color: hsl(0, 0%, 100%);
+}
+
+.secondrow .box2 p{
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.rightgroup{
+    background-color: hsl(0, 0%, 100%);
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px hsla(0, 0%, 0%, 0.189);
+}
+.rightgroup h1{
+    color: hsl(219, 29%, 14%);
+}
+.rightgroup p{
+    color: hsla(217, 30%, 14%, 0.5);
+}
+.rightgroup h2{
+    color: hsla(217, 30%, 14%);
+}
